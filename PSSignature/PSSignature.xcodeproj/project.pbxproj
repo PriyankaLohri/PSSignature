@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7EEC49520D90264003FAA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC49420D90264003FAA4B /* AppDelegate.swift */; };
+		A7EEC49720D90264003FAA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC49620D90264003FAA4B /* ViewController.swift */; };
+		A7EEC49A20D90264003FAA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7EEC49820D90264003FAA4B /* Main.storyboard */; };
+		A7EEC49C20D90264003FAA4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7EEC49B20D90264003FAA4B /* Assets.xcassets */; };
+		A7EEC49F20D90264003FAA4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7EEC49D20D90264003FAA4B /* LaunchScreen.storyboard */; };
+		A7EEC4AA20D90264003FAA4B /* PSSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC4A920D90264003FAA4B /* PSSignatureTests.swift */; };
+		A7EEC4B520D90264003FAA4B /* PSSignatureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC4B420D90264003FAA4B /* PSSignatureUITests.swift */; };
+		A7EEC4C320D902CF003FAA4B /* PSDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC4C220D902CF003FAA4B /* PSDrawSignatureView.swift */; };
+		A7EEC4C520D9093B003FAA4B /* PSFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC4C420D9093B003FAA4B /* PSFinalViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7EEC4A620D90264003FAA4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7EEC48920D90264003FAA4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7EEC49020D90264003FAA4B;
+			remoteInfo = PSSignature;
+		};
+		A7EEC4B120D90264003FAA4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7EEC48920D90264003FAA4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7EEC49020D90264003FAA4B;
+			remoteInfo = PSSignature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7EEC49120D90264003FAA4B /* PSSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EEC49420D90264003FAA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7EEC49620D90264003FAA4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7EEC49920D90264003FAA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7EEC49B20D90264003FAA4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7EEC49E20D90264003FAA4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7EEC4A020D90264003FAA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EEC4A520D90264003FAA4B /* PSSignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSSignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EEC4A920D90264003FAA4B /* PSSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSignatureTests.swift; sourceTree = "<group>"; };
+		A7EEC4AB20D90264003FAA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EEC4B020D90264003FAA4B /* PSSignatureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSSignatureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EEC4B420D90264003FAA4B /* PSSignatureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSignatureUITests.swift; sourceTree = "<group>"; };
+		A7EEC4B620D90264003FAA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EEC4C220D902CF003FAA4B /* PSDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSDrawSignatureView.swift; sourceTree = "<group>"; };
+		A7EEC4C420D9093B003FAA4B /* PSFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSFinalViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7EEC48E20D90264003FAA4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4A220D90264003FAA4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4AD20D90264003FAA4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7EEC48820D90264003FAA4B = {
+			isa = PBXGroup;
+			children = (
+				A7EEC49320D90264003FAA4B /* PSSignature */,
+				A7EEC4A820D90264003FAA4B /* PSSignatureTests */,
+				A7EEC4B320D90264003FAA4B /* PSSignatureUITests */,
+				A7EEC49220D90264003FAA4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7EEC49220D90264003FAA4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC49120D90264003FAA4B /* PSSignature.app */,
+				A7EEC4A520D90264003FAA4B /* PSSignatureTests.xctest */,
+				A7EEC4B020D90264003FAA4B /* PSSignatureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7EEC49320D90264003FAA4B /* PSSignature */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC4C220D902CF003FAA4B /* PSDrawSignatureView.swift */,
+				A7EEC49420D90264003FAA4B /* AppDelegate.swift */,
+				A7EEC49620D90264003FAA4B /* ViewController.swift */,
+				A7EEC4C420D9093B003FAA4B /* PSFinalViewController.swift */,
+				A7EEC49820D90264003FAA4B /* Main.storyboard */,
+				A7EEC49B20D90264003FAA4B /* Assets.xcassets */,
+				A7EEC49D20D90264003FAA4B /* LaunchScreen.storyboard */,
+				A7EEC4A020D90264003FAA4B /* Info.plist */,
+			);
+			path = PSSignature;
+			sourceTree = "<group>";
+		};
+		A7EEC4A820D90264003FAA4B /* PSSignatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC4A920D90264003FAA4B /* PSSignatureTests.swift */,
+				A7EEC4AB20D90264003FAA4B /* Info.plist */,
+			);
+			path = PSSignatureTests;
+			sourceTree = "<group>";
+		};
+		A7EEC4B320D90264003FAA4B /* PSSignatureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC4B420D90264003FAA4B /* PSSignatureUITests.swift */,
+				A7EEC4B620D90264003FAA4B /* Info.plist */,
+			);
+			path = PSSignatureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7EEC49020D90264003FAA4B /* PSSignature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7EEC4B920D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignature" */;
+			buildPhases = (
+				A7EEC48D20D90264003FAA4B /* Sources */,
+				A7EEC48E20D90264003FAA4B /* Frameworks */,
+				A7EEC48F20D90264003FAA4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSSignature;
+			productName = PSSignature;
+			productReference = A7EEC49120D90264003FAA4B /* PSSignature.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7EEC4A420D90264003FAA4B /* PSSignatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7EEC4BC20D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignatureTests" */;
+			buildPhases = (
+				A7EEC4A120D90264003FAA4B /* Sources */,
+				A7EEC4A220D90264003FAA4B /* Frameworks */,
+				A7EEC4A320D90264003FAA4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7EEC4A720D90264003FAA4B /* PBXTargetDependency */,
+			);
+			name = PSSignatureTests;
+			productName = PSSignatureTests;
+			productReference = A7EEC4A520D90264003FAA4B /* PSSignatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7EEC4AF20D90264003FAA4B /* PSSignatureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7EEC4BF20D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignatureUITests" */;
+			buildPhases = (
+				A7EEC4AC20D90264003FAA4B /* Sources */,
+				A7EEC4AD20D90264003FAA4B /* Frameworks */,
+				A7EEC4AE20D90264003FAA4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7EEC4B220D90264003FAA4B /* PBXTargetDependency */,
+			);
+			name = PSSignatureUITests;
+			productName = PSSignatureUITests;
+			productReference = A7EEC4B020D90264003FAA4B /* PSSignatureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7EEC48920D90264003FAA4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					A7EEC49020D90264003FAA4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A7EEC4A420D90264003FAA4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A7EEC49020D90264003FAA4B;
+					};
+					A7EEC4AF20D90264003FAA4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A7EEC49020D90264003FAA4B;
+					};
+				};
+			};
+			buildConfigurationList = A7EEC48C20D90264003FAA4B /* Build configuration list for PBXProject "PSSignature" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7EEC48820D90264003FAA4B;
+			productRefGroup = A7EEC49220D90264003FAA4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7EEC49020D90264003FAA4B /* PSSignature */,
+				A7EEC4A420D90264003FAA4B /* PSSignatureTests */,
+				A7EEC4AF20D90264003FAA4B /* PSSignatureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7EEC48F20D90264003FAA4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EEC49F20D90264003FAA4B /* LaunchScreen.storyboard in Resources */,
+				A7EEC49C20D90264003FAA4B /* Assets.xcassets in Resources */,
+				A7EEC49A20D90264003FAA4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4A320D90264003FAA4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4AE20D90264003FAA4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7EEC48D20D90264003FAA4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EEC49720D90264003FAA4B /* ViewController.swift in Sources */,
+				A7EEC49520D90264003FAA4B /* AppDelegate.swift in Sources */,
+				A7EEC4C520D9093B003FAA4B /* PSFinalViewController.swift in Sources */,
+				A7EEC4C320D902CF003FAA4B /* PSDrawSignatureView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4A120D90264003FAA4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EEC4AA20D90264003FAA4B /* PSSignatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EEC4AC20D90264003FAA4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EEC4B520D90264003FAA4B /* PSSignatureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7EEC4A720D90264003FAA4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7EEC49020D90264003FAA4B /* PSSignature */;
+			targetProxy = A7EEC4A620D90264003FAA4B /* PBXContainerItemProxy */;
+		};
+		A7EEC4B220D90264003FAA4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7EEC49020D90264003FAA4B /* PSSignature */;
+			targetProxy = A7EEC4B120D90264003FAA4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7EEC49820D90264003FAA4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7EEC49920D90264003FAA4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7EEC49D20D90264003FAA4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7EEC49E20D90264003FAA4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7EEC4B720D90264003FAA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7EEC4B820D90264003FAA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7EEC4BA20D90264003FAA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignature/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7EEC4BB20D90264003FAA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignature/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7EEC4BD20D90264003FAA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSSignature.app/PSSignature";
+			};
+			name = Debug;
+		};
+		A7EEC4BE20D90264003FAA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignatureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSSignature.app/PSSignature";
+			};
+			name = Release;
+		};
+		A7EEC4C020D90264003FAA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignatureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSSignature;
+			};
+			name = Debug;
+		};
+		A7EEC4C120D90264003FAA4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PSSignatureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ps.PSSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PSSignature;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7EEC48C20D90264003FAA4B /* Build configuration list for PBXProject "PSSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7EEC4B720D90264003FAA4B /* Debug */,
+				A7EEC4B820D90264003FAA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7EEC4B920D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7EEC4BA20D90264003FAA4B /* Debug */,
+				A7EEC4BB20D90264003FAA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7EEC4BC20D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7EEC4BD20D90264003FAA4B /* Debug */,
+				A7EEC4BE20D90264003FAA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7EEC4BF20D90264003FAA4B /* Build configuration list for PBXNativeTarget "PSSignatureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7EEC4C020D90264003FAA4B /* Debug */,
+				A7EEC4C120D90264003FAA4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7EEC48920D90264003FAA4B /* Project object */;
+}

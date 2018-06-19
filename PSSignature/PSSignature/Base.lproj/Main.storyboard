@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PSSignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-9V-IGC" customClass="PSDrawSignatureView" customModule="PSSignature" customModuleProvider="target">
+                                <rect key="frame" x="15" y="85" width="345" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Gog-hP-NQh"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tp5-bW-Vke">
+                                <rect key="frame" x="15" y="406" width="345" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQI-Lr-ziI">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="32"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="di2-6A-d3e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFZ-SU-TWl">
+                                        <rect key="frame" x="173.5" y="0.0" width="171.5" height="32"/>
+                                        <color key="backgroundColor" red="0.43793224380000001" green="0.44596761439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Capture">
+                                            <color key="titleColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="captureAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EvR-ib-eBh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="GOc-ld-hFf">
+                                <rect key="frame" x="15" y="30" width="345" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adZ-VV-FEq" userLabel="Btn1">
+                                        <rect key="frame" x="0.0" y="0.0" width="56.5" height="30"/>
+                                        <color key="backgroundColor" red="0.43793224380000001" green="0.44596761439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Jx-dN-mf1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-2h-Nte" userLabel="Btn2">
+                                        <rect key="frame" x="57.5" y="0.0" width="57" height="30"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.90895647319999995" blue="0.14541413759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhp-86-Kcv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GJ-6r-RRu" userLabel="Btn3">
+                                        <rect key="frame" x="115.5" y="0.0" width="56.5" height="30"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.2133737778" blue="0.14541413759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFd-kW-qpO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNu-oF-acu" userLabel="Btn4">
+                                        <rect key="frame" x="173" y="0.0" width="56.5" height="30"/>
+                                        <color key="backgroundColor" red="0.87857361320000005" green="0.81058877500000004" blue="0.9368725712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98n-2n-vcM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPH-mO-4iP" userLabel="Btn5">
+                                        <rect key="frame" x="230.5" y="0.0" width="57" height="30"/>
+                                        <color key="backgroundColor" red="0.40168646260000002" green="1" blue="0.50025759059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHU-7Y-FOP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-qO-LDh" userLabel="Btn6">
+                                        <rect key="frame" x="288.5" y="0.0" width="56.5" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lzb-O8-xUP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bdh-9V-IGC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="2oL-Zl-5Cw"/>
+                            <constraint firstItem="tp5-bW-Vke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="9gG-dE-gyS"/>
+                            <constraint firstItem="bdh-9V-IGC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Gsn-YY-THG"/>
+                            <constraint firstItem="tp5-bW-Vke" firstAttribute="top" secondItem="bdh-9V-IGC" secondAttribute="bottom" constant="21" id="J3e-0C-3yy"/>
+                            <constraint firstItem="GOc-ld-hFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="PIK-2I-w6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOc-ld-hFf" secondAttribute="trailing" constant="15" id="XUm-eU-xke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bdh-9V-IGC" secondAttribute="trailing" constant="15" id="agG-2X-0od"/>
+                            <constraint firstItem="GOc-ld-hFf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="n9w-mr-KbK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tp5-bW-Vke" secondAttribute="trailing" constant="15" id="oMs-FG-W4w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="signatureView" destination="bdh-9V-IGC" id="UuT-Ht-dMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="Gwg-UX-8Qc">
+            <objects>
+                <viewController storyboardIdentifier="PSFinalViewController_ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nnf-gs-9DA" customClass="PSFinalViewController" customModule="PSSignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZD-m3-Tq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYA-iE-E4C">
+                                <rect key="frame" x="10" y="85" width="355" height="260"/>
+                                <color key="backgroundColor" red="0.9368725712" green="0.59734096599712017" blue="0.26617566132919834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="5ec-nW-6FY"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BO7-bN-D5s">
+                                <rect key="frame" x="15" y="90" width="345" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="TSg-de-Eo5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-IV-dk7">
+                                <rect key="frame" x="164.5" y="360" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="  Back "/>
+                                <connections>
+                                    <action selector="backAction:" destination="Nnf-gs-9DA" eventType="touchUpInside" id="ge4-Nb-cG0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fW5-IV-dk7" firstAttribute="top" secondItem="BO7-bN-D5s" secondAttribute="bottom" constant="20" id="3mE-E1-ZiO"/>
+                            <constraint firstItem="slq-Go-k9I" firstAttribute="trailing" secondItem="BO7-bN-D5s" secondAttribute="trailing" constant="15" id="5ex-I8-Hry"/>
+                            <constraint firstItem="slq-Go-k9I" firstAttribute="trailing" secondItem="jYA-iE-E4C" secondAttribute="trailing" constant="10" id="6IR-b3-pXK"/>
+                            <constraint firstItem="BO7-bN-D5s" firstAttribute="leading" secondItem="slq-Go-k9I" secondAttribute="leading" constant="15" id="MhM-J2-NQT"/>
+                            <constraint firstItem="jYA-iE-E4C" firstAttribute="top" secondItem="slq-Go-k9I" secondAttribute="top" constant="65" id="ix5-jm-MAG"/>
+                            <constraint firstItem="BO7-bN-D5s" firstAttribute="top" secondItem="slq-Go-k9I" secondAttribute="top" constant="70" id="lsk-vJ-rO0"/>
+                            <constraint firstItem="fW5-IV-dk7" firstAttribute="centerX" secondItem="aZD-m3-Tq1" secondAttribute="centerX" id="uAx-eC-o6j"/>
+                            <constraint firstItem="jYA-iE-E4C" firstAttribute="leading" secondItem="slq-Go-k9I" secondAttribute="leading" constant="10" id="yhb-FZ-Gh3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="slq-Go-k9I"/>
+                    </view>
+                    <connections>
+                        <outlet property="signatureImageView" destination="BO7-bN-D5s" id="ggY-Fv-lVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCs-nn-juW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-853.22338830584715"/>
+        </scene>
+    </scenes>
+</document>
