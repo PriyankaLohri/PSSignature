@@ -2,9 +2,7 @@
 //  PSSignatureUITests.swift
 //  PSSignatureUITests
 //
-//  Created by e-Zest Admin on 19/06/18.
-//  Copyright © 2018 Admin. All rights reserved.
-//
+
 
 import XCTest
 
